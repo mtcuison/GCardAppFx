@@ -1,0 +1,186 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.RadioButton?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.ColumnConstraints?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.layout.RowConstraints?>
+<?import javafx.scene.layout.StackPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="AnchorPane" prefHeight="646.0" prefWidth="724.0" stylesheets="@../styles/CenterScreen.css" xmlns="http://javafx.com/javafx/8.0.141" xmlns:fx="http://javafx.com/fxml/1">
+   <children>
+      <StackPane prefHeight="150.0" prefWidth="200.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+         <children>
+            <BorderPane prefHeight="200.0" prefWidth="200.0">
+               <top>
+                  <StackPane prefHeight="30.0" prefWidth="600.0" BorderPane.alignment="CENTER">
+                     <children>
+                        <AnchorPane maxHeight="30.0" minHeight="30.0" prefHeight="30.0" prefWidth="600.0">
+                           <children>
+                              <Label fx:id="lblTitle" layoutX="8.0" layoutY="6.0" text="Card Activation" AnchorPane.bottomAnchor="4.0" AnchorPane.leftAnchor="8.0" AnchorPane.topAnchor="6.0">
+                                 <font>
+                                    <Font name="Bell MT Bold" size="17.0" />
+                                 </font>
+                              </Label>
+                           </children>
+                        </AnchorPane>
+                     </children>
+                  </StackPane>
+               </top>
+               <center>
+                  <AnchorPane minHeight="80.0" prefHeight="69.0" prefWidth="724.0" BorderPane.alignment="CENTER">
+                     <children>
+                        <StackPane prefHeight="59.0" prefWidth="724.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+                           <children>
+                              <AnchorPane prefWidth="724.0">
+                                 <children>
+                                    <Pane layoutX="18.0" layoutY="11.0" minHeight="52.0" opacity="0.1" prefWidth="688.0" style="-fx-background-color: black;" AnchorPane.bottomAnchor="2.0" AnchorPane.leftAnchor="18.0" AnchorPane.rightAnchor="18.0" AnchorPane.topAnchor="2.0" />
+                                    <GridPane fx:id="NodePane00" layoutX="25.0" layoutY="12.0" prefWidth="674.0" AnchorPane.leftAnchor="25.0" AnchorPane.rightAnchor="25.0" AnchorPane.topAnchor="12.0">
+                                       <columnConstraints>
+                                          <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                                          <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                                          <ColumnConstraints hgrow="SOMETIMES" maxWidth="62.0" minWidth="10.0" prefWidth="49.0" />
+                                          <ColumnConstraints hgrow="SOMETIMES" maxWidth="93.0" minWidth="10.0" prefWidth="85.0" />
+                                          <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                                          <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                                          <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                                          <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                                          <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                                          <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                                       </columnConstraints>
+                                       <rowConstraints>
+                                          <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                                          <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                                          <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                                       </rowConstraints>
+                                       <children>
+                                          <TextField fx:id="txtField00" disable="true" GridPane.columnIndex="2" GridPane.columnSpan="3" GridPane.rowIndex="1" />
+                                          <TextField fx:id="txtField01" disable="true" GridPane.columnIndex="7" GridPane.columnSpan="2" GridPane.rowIndex="1" />
+                                          <Label text="Card No:" GridPane.columnIndex="1" GridPane.columnSpan="2" GridPane.rowIndex="1">
+                                             <GridPane.margin>
+                                                <Insets left="-20.0" />
+                                             </GridPane.margin>
+                                          </Label>
+                                          <Label text="Client Name" GridPane.columnIndex="6" GridPane.rowIndex="1">
+                                             <GridPane.margin>
+                                                <Insets />
+                                             </GridPane.margin></Label>
+                                          <TextField fx:id="txtField03" maxHeight="34.0" prefHeight="34.0" prefWidth="156.0" GridPane.columnIndex="2" GridPane.columnSpan="3" GridPane.rowIndex="2" />
+                                          <Label text="Activation Date:" GridPane.columnIndex="1" GridPane.columnSpan="2" GridPane.rowIndex="2">
+                                             <GridPane.margin>
+                                                <Insets left="-20.0" />
+                                             </GridPane.margin>
+                                          </Label>
+                                          <ComboBox fx:id="cmbCardClass" onAction="#cmbCardClass_Change" prefHeight="27.0" prefWidth="165.0" GridPane.columnIndex="2" GridPane.columnSpan="3" />
+                                          <Label text="Card Type:" GridPane.columnIndex="1" GridPane.columnSpan="2">
+                                             <GridPane.margin>
+                                                <Insets left="-20.0" />
+                                             </GridPane.margin>
+                                          </Label>
+                                       </children>
+                                    </GridPane>
+                                 </children>
+                              </AnchorPane>
+                           </children>
+                        </StackPane>
+                     </children>
+                  </AnchorPane>
+               </center>
+               <bottom>
+                  <AnchorPane prefHeight="509.0" prefWidth="724.0" BorderPane.alignment="CENTER">
+                     <children>
+                        <StackPane layoutY="1.0" prefHeight="554.0" prefWidth="724.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+                           <children>
+                              <AnchorPane prefHeight="550.0" prefWidth="724.0">
+                                 <children>
+                                    <Pane layoutX="18.0" layoutY="10.0" opacity="0.1" prefHeight="289.0" prefWidth="688.0" style="-fx-background-color: black;" AnchorPane.bottomAnchor="219.0" AnchorPane.leftAnchor="18.0" AnchorPane.rightAnchor="18.0" AnchorPane.topAnchor="1.0" />
+                                    <GridPane fx:id="NodePane01" layoutX="20.0" layoutY="20.0" prefHeight="185.0" prefWidth="674.0" AnchorPane.leftAnchor="25.0" AnchorPane.rightAnchor="25.0" AnchorPane.topAnchor="40.0">
+                                       <columnConstraints>
+                                          <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                                          <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                                          <ColumnConstraints hgrow="SOMETIMES" maxWidth="62.0" minWidth="10.0" prefWidth="49.0" />
+                                          <ColumnConstraints hgrow="SOMETIMES" maxWidth="93.0" minWidth="10.0" prefWidth="85.0" />
+                                          <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                                          <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                                          <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                                          <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                                          <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                                          <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                                       </columnConstraints>
+                                       <rowConstraints>
+                                          <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                                          <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                                          <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                                          <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                                          <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                                          <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                                          <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                                       </rowConstraints>
+                                       <children>
+                                          <TextField editable="false" focusTraversable="false" style="-fx-background-color: black;" GridPane.columnIndex="2" GridPane.columnSpan="3">
+                                             <GridPane.margin>
+                                                <Insets bottom="-15.0" left="5.0" right="-5.0" />
+                                             </GridPane.margin>
+                                          </TextField>
+                                          <TextField fx:id="txtField02" focusTraversable="false" GridPane.columnIndex="2" GridPane.columnSpan="3" />
+                                          <TextField fx:id="txtField04" GridPane.columnIndex="2" GridPane.columnSpan="7" GridPane.rowIndex="2" />
+                                          <TextField fx:id="txtField05" GridPane.columnIndex="2" GridPane.columnSpan="7" GridPane.rowIndex="3" />
+                                          <TextField fx:id="txtField06" GridPane.columnIndex="2" GridPane.columnSpan="7" GridPane.rowIndex="4" />
+                                          <TextField fx:id="txtField07" maxHeight="35.0" prefHeight="35.0" prefWidth="157.0" GridPane.columnIndex="2" GridPane.columnSpan="3" GridPane.rowIndex="5" />
+                                          <ImageView fx:id="imageview" fitHeight="32.0" fitWidth="162.0" pickOnBounds="true" preserveRatio="true" GridPane.columnIndex="7">
+                                             <GridPane.margin>
+                                                <Insets />
+                                             </GridPane.margin>
+                                          </ImageView>
+                                          <RadioButton fx:id="rbtn00" mnemonicParsing="false" text="Premium" GridPane.columnIndex="7" GridPane.rowIndex="5" />
+                                          <RadioButton fx:id="rbtn01" mnemonicParsing="false" text="Plus" GridPane.columnIndex="8" GridPane.rowIndex="5" />
+                                          <Label text="Card Type:" GridPane.columnIndex="6" GridPane.rowIndex="5">
+                                             <GridPane.margin>
+                                                <Insets />
+                                             </GridPane.margin></Label>
+                                          <Label text="Card Number:" GridPane.columnIndex="1" GridPane.columnSpan="2">
+                                             <GridPane.margin>
+                                                <Insets left="-20.0" />
+                                             </GridPane.margin>
+                                          </Label>
+                                          <Label text="Name:" GridPane.columnIndex="1" GridPane.columnSpan="2" GridPane.rowIndex="2">
+                                             <GridPane.margin>
+                                                <Insets left="-20.0" />
+                                             </GridPane.margin>
+                                          </Label>
+                                          <Label text="Address:" GridPane.columnIndex="1" GridPane.rowIndex="3">
+                                             <GridPane.margin>
+                                                <Insets left="-20.0" />
+                                             </GridPane.margin>
+                                          </Label>
+                                          <Label text="Branch:" GridPane.columnIndex="1" GridPane.rowIndex="4">
+                                             <GridPane.margin>
+                                                <Insets left="-20.0" />
+                                             </GridPane.margin>
+                                          </Label>
+                                          <Label text="Member Since:" GridPane.columnIndex="1" GridPane.columnSpan="2" GridPane.rowIndex="5">
+                                             <GridPane.margin>
+                                                <Insets left="-20.0" />
+                                             </GridPane.margin>
+                                          </Label>
+                                       </children>
+                                    </GridPane>
+                                 </children>
+                              </AnchorPane>
+                           </children>
+                        </StackPane>
+                     </children></AnchorPane>
+               </bottom>
+            </BorderPane>
+         </children>
+      </StackPane>
+   </children>
+</AnchorPane>
