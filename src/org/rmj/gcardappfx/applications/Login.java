@@ -70,6 +70,7 @@ public class Login {
             
             //validation
             System.setProperty("app.gcard.digital.1", po_props.getProperty("app.gcard.digital.1"));
+            System.setProperty("app.gcard.ads", po_props.getProperty("app.gcard.ads"));
             
             return true;
         } catch (FileNotFoundException ex) {
