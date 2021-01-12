@@ -29,9 +29,14 @@ import javafx.scene.control.ProgressBar;
 import javafx.scene.control.TextField;
 import javafx.scene.control.ToggleButton;
 import javafx.scene.control.Tooltip;
+import javafx.scene.image.Image;
 import javafx.scene.layout.AnchorPane;
+import javafx.scene.layout.Background;
+import javafx.scene.layout.BackgroundImage;
+import javafx.scene.layout.BackgroundPosition;
+import javafx.scene.layout.BackgroundRepeat;
+import javafx.scene.layout.BackgroundSize;
 import javafx.scene.layout.GridPane;
-import javafx.scene.layout.StackPane;
 import javafx.scene.layout.VBox;
 import javafx.stage.Screen;
 import javafx.stage.Stage;
@@ -40,22 +45,32 @@ import org.rmj.appdriver.GRider;
 import org.rmj.appdriver.SQLUtil;
 import org.rmj.appdriver.agentfx.CommonUtils;
 import org.rmj.appdriver.agentfx.ShowMessageFX;
-import org.rmj.appdriver.constants.GCDeviceType;
-import org.rmj.gcard.device.ui.GCardDeviceFactory;
-import org.rmj.gcard.trans.agentFX.XMGCConnect;
+import javafx.scene.layout.StackPane;
 
 public class GCardAppFxController implements Initializable {
      
-    @FXML
-    private Button btnMinimize;
-    @FXML
-    private ToggleButton btnRestoreDown;
-    @FXML
-    private FontAwesomeIconView cmdGlyph;
-    @FXML
-    private Button btnExit;
-    @FXML
-    private Label lblName;
+    @FXML private Button btnMinimize;
+    @FXML private ToggleButton btnRestoreDown;
+    @FXML private FontAwesomeIconView cmdGlyph;
+    @FXML private Button btnExit;
+    @FXML private Label lblName;
+    @FXML private Label lblTime;
+    @FXML private Label lblDate;
+    @FXML private Label lblDay;
+    @FXML private Label lblSeconds;
+    @FXML private GridPane ParentPane;
+    @FXML private Tooltip tootip80;
+    @FXML private Button btnHome;
+    @FXML private Label lblBranch;
+    @FXML private Label lblTasks;
+    @FXML private Label lblNav1;
+    @FXML public Label lblCardNmbr;
+    @FXML private Label lblNav11;
+    @FXML public Label lblDeviceType;
+    @FXML private AnchorPane acBody;
+    @FXML private Label lblNav111;
+    @FXML public Label lblMobileNo;
+    @FXML private StackPane leftbg;
     
     public Task task;
     public AnchorPane rootPane;
@@ -122,38 +137,6 @@ public class GCardAppFxController implements Initializable {
     private static GRider poGRider;
     public Config properties;
     
-    @FXML
-    private Label lblTime;
-    @FXML
-    private Label lblDate;
-    @FXML
-    private Label lblDay;
-    @FXML
-    private Label lblSeconds;
-    @FXML
-    private GridPane ParentPane;
-    @FXML
-    private Tooltip tootip80;
-    @FXML
-    private Button btnHome;
-    @FXML
-    private Label lblBranch;
-    @FXML
-    private Label lblTasks;
-    @FXML
-    private Label lblNav1;
-    @FXML
-    public Label lblCardNmbr;
-    @FXML
-    private Label lblNav11;
-    @FXML
-    public Label lblDeviceType;
-    @FXML
-    private AnchorPane acBody;
-    @FXML
-    private Label lblNav111;
-    @FXML
-    public Label lblMobileNo;
     
     @Override
     public void initialize(URL url, ResourceBundle rb) {
@@ -220,7 +203,18 @@ public class GCardAppFxController implements Initializable {
     }
     
     // loading details of Button
-    public void loadMainGui(){   
+    public void loadMainGui(){
+        String lsImageNoAd = "org/rmj/gcardappfx/images/buttons_bg.jpg";
+        String lsImageWithAd = "org/rmj/gcardappfx/images/ads_bg.gif";
+        //Image lsImageNoAd= new Image(GCardAppFxController.class.getResource("buttons_bg.jpg").toExternalForm()); 
+        //Image lsImageWithAd = new Image(GCardAppFxController.class.getResource("ads_bg.gif").toExternalForm()); 
+        
+        if(System.getProperty("app.gcard.ads").equals("1")){
+            leftbg.setBackground(new Background(new BackgroundImage(new Image(lsImageWithAd), BackgroundRepeat.NO_REPEAT, BackgroundRepeat.NO_REPEAT, BackgroundPosition.CENTER, new BackgroundSize(BackgroundSize.AUTO, BackgroundSize.AUTO, false, false, false, true))));
+        }else{
+            leftbg.setBackground(new Background(new BackgroundImage(new Image(lsImageNoAd), BackgroundRepeat.NO_REPEAT, BackgroundRepeat.NO_REPEAT, BackgroundPosition.CENTER, new BackgroundSize(BackgroundSize.AUTO, BackgroundSize.AUTO, false, false, false, true))));
+        }
+        
         switch (System.getProperty("app.main.office")){
             case "1":
                 cmdButton00.setText(""); //CONNECT
