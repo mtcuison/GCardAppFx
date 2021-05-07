@@ -1,0 +1,17 @@
+.button{
+    -fx-border-width: 0px 0px 0px 5px;
+    -fx-border-radius: 0px;
+    -fx-background-radius: 0px;
+    -fx-background-color: transparent;
+    -fx-fill: #ffffff;
+}
+
+.button:hover .glyph-icon{
+    -fx-fill: white;
+}
+
+.button:hover{
+    -fx-text-fill: white;
+    
+}
+

@@ -1,0 +1,56 @@
+Apr 08, 2017 9:35:48 AM org.rmj.Replication.utility.LogWrapper severe
+SEVERE: connectCard: Unable to verify pin number 1061600027709!
+May 08, 2017 10:04:57 AM org.rmj.Replication.utility.LogWrapper severe
+SEVERE: connectCard: Unable to verify pin number 0üþóþõ÷÷õ÷ûõÿ!
+May 29, 2019 4:25:51 PM org.rmj.replication.utility.LogWrapper severe
+SEVERE: connectCard: Can't Initialize card. 
+May 29, 2019 4:26:09 PM org.rmj.replication.utility.LogWrapper severe
+SEVERE: connectCard: Can't Initialize card. 
+Jun 07, 2019 1:50:21 PM org.rmj.replication.utility.LogWrapper severe
+SEVERE: connectCard: Can't Initialize card. 
+Jun 14, 2019 9:00:36 AM org.rmj.replication.utility.LogWrapper severe
+SEVERE: connectCard: Can't Connect card. 
+Jun 14, 2019 9:00:44 AM org.rmj.replication.utility.LogWrapper severe
+SEVERE: connectCard: Can't Connect card. 
+Jun 14, 2019 9:00:46 AM org.rmj.replication.utility.LogWrapper severe
+SEVERE: connectCard: Can't Connect card. 
+Jun 14, 2019 9:01:02 AM org.rmj.replication.utility.LogWrapper severe
+SEVERE: connectCard: Can't Connect card. 
+Jun 14, 2019 9:01:12 AM org.rmj.replication.utility.LogWrapper severe
+SEVERE: connectCard: Can't Connect card. 
+Jun 14, 2019 9:01:25 AM org.rmj.replication.utility.LogWrapper severe
+SEVERE: connectCard: Can't Connect card. 
+Jun 14, 2019 9:09:47 AM org.rmj.replication.utility.LogWrapper severe
+SEVERE: connectCard: Can't Initialize card. 
+Jun 14, 2019 9:09:58 AM org.rmj.replication.utility.LogWrapper severe
+SEVERE: connectCard: Can't Initialize card. 
+Jun 14, 2019 9:10:03 AM org.rmj.replication.utility.LogWrapper severe
+SEVERE: connectCard: Can't Initialize card. 
+Jun 14, 2019 11:16:11 AM org.rmj.replication.utility.LogWrapper severe
+SEVERE: connectCard: Can't Connect card. 
+Jun 14, 2019 11:20:13 AM org.rmj.replication.utility.LogWrapper severe
+SEVERE: connectCard: Can't Initialize card. 
+Jun 14, 2019 11:20:38 AM org.rmj.replication.utility.LogWrapper severe
+SEVERE: connectCard: Can't Initialize card. 
+Jun 14, 2019 11:54:02 AM org.rmj.replication.utility.LogWrapper severe
+SEVERE: connectCard: Can't Connect card. 
+Jun 14, 2019 11:54:12 AM org.rmj.replication.utility.LogWrapper severe
+SEVERE: connectCard: Can't Connect card. 
+Jun 14, 2019 11:54:37 AM org.rmj.replication.utility.LogWrapper severe
+SEVERE: connectCard: Can't Connect card. 
+Aug 31, 2019 1:49:39 PM org.rmj.replication.utility.LogWrapper severe
+SEVERE: voidTransaction: Unable to void M02619002029
+Aug 31, 2019 1:54:15 PM org.rmj.replication.utility.LogWrapper severe
+SEVERE: voidTransaction: Unable to void M02619002029
+Nov 07, 2020 11:48:00 AM org.rmj.replication.utility.LogWrapper severe
+SEVERE: saveUpdate: Unable to save M01417000092 with Ref No. 123449 AND Source Code M02910000004
+Nov 07, 2020 11:53:50 AM org.rmj.replication.utility.LogWrapper severe
+SEVERE: saveUpdate: Unable to save M01417000092 with Ref No. 123449 AND Source Code M02910000004
+Nov 07, 2020 12:02:05 PM org.rmj.replication.utility.LogWrapper severe
+SEVERE: saveUpdate: Unable to save M01417000092 with Ref No. 123449 AND Source Code M02910000004
+Nov 07, 2020 12:04:12 PM org.rmj.replication.utility.LogWrapper severe
+SEVERE: saveUpdate: Unable to save M01417000092 with Ref No. 123449 AND Source Code M02910000004
+Nov 07, 2020 12:06:49 PM org.rmj.replication.utility.LogWrapper severe
+SEVERE: saveUpdate: Unable to save M01417000092 with Ref No. 123449 AND Source Code M02910000004
+Nov 07, 2020 12:13:01 PM org.rmj.replication.utility.LogWrapper severe
+SEVERE: saveUpdate: Unable to save M01417000092 with Ref No. 123449 AND Source Code M02910000004

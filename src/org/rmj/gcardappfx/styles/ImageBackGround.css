@@ -1,0 +1,15 @@
+.rightbg{
+ -fx-background-image: url("/org/rmj/gcardappfx/images/buttons_bg.jpg");
+ -fx-background-size: 100% 100%;
+}
+
+.centerbg{
+ -fx-background-image: url("/org/rmj/gcardappfx/images/background2.jpg");
+ -fx-background-size: 100% 100%;
+}
+
+.leftbg{
+ -fx-background-image: url("/org/rmj/gcardappfx/images/ads_bg.gif");
+ -fx-background-size: 100% 100%;
+}
+

@@ -1,0 +1,269 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.CheckBox?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.RadioButton?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.ColumnConstraints?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.layout.RowConstraints?>
+<?import javafx.scene.layout.StackPane?>
+<?import javafx.scene.text.Font?>
+<?import org.controlsfx.control.textfield.CustomTextField?>
+
+<AnchorPane id="AnchorPane" minHeight="646.0" prefHeight="663.0" prefWidth="724.0" stylesheets="@../styles/CenterScreen.css" xmlns="http://javafx.com/javafx/8.0.141" xmlns:fx="http://javafx.com/fxml/1">
+   <children>
+      <StackPane prefHeight="150.0" prefWidth="200.0" stylesheets="@../styles/CenterScreen.css" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+         <children>
+            <BorderPane prefHeight="200.0" prefWidth="200.0">
+               <top>
+                  <StackPane prefHeight="30.0" prefWidth="600.0" BorderPane.alignment="CENTER">
+                     <children>
+                        <AnchorPane maxHeight="30.0" minHeight="30.0" prefHeight="30.0" prefWidth="600.0">
+                           <children>
+                              <Label fx:id="lblTitle" layoutX="9.0" layoutY="13.0" text="GCard Application Register" AnchorPane.bottomAnchor="4.0" AnchorPane.leftAnchor="8.0" AnchorPane.topAnchor="6.0">
+                                 <font>
+                                    <Font name="Arial Bold" size="17.0" />
+                                 </font>
+                              </Label>
+                           </children>
+                        </AnchorPane>
+                     </children>
+                  </StackPane>
+               </top>
+               <bottom>
+                  <AnchorPane minHeight="551.0" minWidth="724.0" prefHeight="562.0" prefWidth="724.0" BorderPane.alignment="CENTER">
+                     <children>
+                        <StackPane prefHeight="235.0" prefWidth="845.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="2.0">
+                           <children>
+                              <AnchorPane prefHeight="601.0" prefWidth="724.0">
+                                 <children>
+                                    <Pane layoutX="18.0" layoutY="-11.0" opacity="0.1" prefHeight="578.0" prefWidth="688.0" style="-fx-background-color: black;" AnchorPane.bottomAnchor="3.0" AnchorPane.leftAnchor="18.0" AnchorPane.rightAnchor="18.0" AnchorPane.topAnchor="2.0" />
+                                    <GridPane fx:id="NodePane01" layoutX="25.0" layoutY="-10.0" prefHeight="553.0" prefWidth="674.0" AnchorPane.leftAnchor="25.0" AnchorPane.rightAnchor="25.0" AnchorPane.topAnchor="7.0">
+                                       <columnConstraints>
+                                          <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                                          <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                                          <ColumnConstraints hgrow="SOMETIMES" maxWidth="80.0" minWidth="10.0" prefWidth="80.0" />
+                                          <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                                          <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                                          <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                                          <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                                          <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                                          <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                                          <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                                          <ColumnConstraints />
+                                          <ColumnConstraints />
+                                          <ColumnConstraints />
+                                       </columnConstraints>
+                                       <rowConstraints>
+                                          <RowConstraints minHeight="10.0" prefHeight="31.0" vgrow="SOMETIMES" />
+                                          <RowConstraints minHeight="10.0" prefHeight="15.0" vgrow="SOMETIMES" />
+                                          <RowConstraints minHeight="10.0" prefHeight="31.0" vgrow="SOMETIMES" />
+                                          <RowConstraints minHeight="10.0" prefHeight="31.0" vgrow="SOMETIMES" />
+                                          <RowConstraints minHeight="10.0" prefHeight="31.0" vgrow="SOMETIMES" />
+                                          <RowConstraints minHeight="10.0" prefHeight="31.0" vgrow="SOMETIMES" />
+                                          <RowConstraints minHeight="10.0" prefHeight="31.0" vgrow="SOMETIMES" />
+                                          <RowConstraints minHeight="10.0" prefHeight="31.0" vgrow="SOMETIMES" />
+                                          <RowConstraints minHeight="10.0" prefHeight="31.0" vgrow="SOMETIMES" />
+                                          <RowConstraints minHeight="10.0" prefHeight="31.0" vgrow="SOMETIMES" />
+                                          <RowConstraints minHeight="10.0" prefHeight="20.0" vgrow="SOMETIMES" />
+                                          <RowConstraints minHeight="10.0" prefHeight="20.0" vgrow="SOMETIMES" />
+                                          <RowConstraints minHeight="10.0" prefHeight="23.0" vgrow="SOMETIMES" />
+                                          <RowConstraints minHeight="10.0" prefHeight="23.0" vgrow="SOMETIMES" />
+                                          <RowConstraints minHeight="10.0" prefHeight="23.0" vgrow="SOMETIMES" />
+                                          <RowConstraints minHeight="10.0" prefHeight="23.0" vgrow="SOMETIMES" />
+                                          <RowConstraints minHeight="10.0" prefHeight="23.0" vgrow="SOMETIMES" />
+                                          <RowConstraints minHeight="10.0" prefHeight="23.0" vgrow="SOMETIMES" />
+                                          <RowConstraints minHeight="10.0" prefHeight="23.0" vgrow="SOMETIMES" />
+                                          <RowConstraints minHeight="10.0" prefHeight="23.0" vgrow="SOMETIMES" />
+                                          <RowConstraints minHeight="10.0" prefHeight="23.0" vgrow="SOMETIMES" />
+                                          <RowConstraints minHeight="10.0" prefHeight="23.0" vgrow="SOMETIMES" />
+                                          <RowConstraints minHeight="10.0" prefHeight="23.0" vgrow="SOMETIMES" />
+                                          <RowConstraints minHeight="10.0" prefHeight="23.0" vgrow="SOMETIMES" />
+                                          <RowConstraints minHeight="10.0" prefHeight="23.0" vgrow="SOMETIMES" />
+                                          <RowConstraints minHeight="10.0" prefHeight="23.0" vgrow="SOMETIMES" />
+                                          <RowConstraints minHeight="10.0" prefHeight="23.0" vgrow="SOMETIMES" />
+                                       </rowConstraints>
+                                       <children>
+                                          <TextField editable="false" focusTraversable="false" style="-fx-background-color: black;" GridPane.columnIndex="3" GridPane.columnSpan="2">
+                                             <GridPane.margin>
+                                                <Insets bottom="-15.0" left="5.0" right="-5.0" />
+                                             </GridPane.margin>
+                                          </TextField>
+                                          <TextField fx:id="txtField00" focusTraversable="false" GridPane.columnIndex="3" GridPane.columnSpan="2" />
+                                          <TextField fx:id="txtField02" GridPane.columnIndex="3" GridPane.columnSpan="2" GridPane.rowIndex="3" />
+                                          <TextField fx:id="txtField03" GridPane.columnIndex="3" GridPane.columnSpan="6" GridPane.rowIndex="4" />
+                                          <TextField fx:id="txtField04" GridPane.columnIndex="3" GridPane.columnSpan="6" GridPane.rowIndex="5" />
+                                          <TextField fx:id="txtField05" GridPane.columnIndex="3" GridPane.columnSpan="2" GridPane.rowIndex="6" />
+                                          <ComboBox fx:id="cmbPurchase" minHeight="25.0" prefHeight="25.0" prefWidth="150.0" GridPane.columnIndex="3" GridPane.columnSpan="2" GridPane.rowIndex="7" />
+                                          <TextField fx:id="txtField06" GridPane.columnIndex="3" GridPane.columnSpan="2" GridPane.rowIndex="8" />
+                                          <TextField fx:id="txtField07" GridPane.columnIndex="3" GridPane.columnSpan="6" GridPane.rowIndex="9" />
+                                          <ComboBox fx:id="cmbAppliType" minHeight="25.0" prefHeight="25.0" prefWidth="150.0" GridPane.columnIndex="7" GridPane.columnSpan="2" GridPane.rowIndex="2" />
+                                          <RadioButton fx:id="rbtn00" mnemonicParsing="false" text="Premium" GridPane.columnIndex="7" GridPane.rowIndex="3" />
+                                          <RadioButton fx:id="rbtn01" mnemonicParsing="false" text="Plus" GridPane.columnIndex="8" GridPane.rowIndex="3" />
+                                          <TextField fx:id="txtField08" GridPane.columnIndex="7" GridPane.columnSpan="2" GridPane.rowIndex="8" />
+                                          <CheckBox fx:id="chk00" mnemonicParsing="false" text="Cash Price is Reasonable/Affordable" GridPane.columnIndex="1" GridPane.columnSpan="4" GridPane.rowIndex="12" />
+                                          <CheckBox fx:id="chk01" mnemonicParsing="false" text="Friendly &amp; Accomodating Salesman" GridPane.columnIndex="1" GridPane.columnSpan="4" GridPane.rowIndex="13" />
+                                          <CheckBox fx:id="chk02" mnemonicParsing="false" text="Convinced by Salesman About Product's Benefit" GridPane.columnIndex="1" GridPane.columnSpan="4" GridPane.rowIndex="14" />
+                                          <CheckBox fx:id="chk03" mnemonicParsing="false" text="Attractive  Showroom" GridPane.columnIndex="1" GridPane.columnSpan="3" GridPane.rowIndex="15" />
+                                          <CheckBox fx:id="chk05" mnemonicParsing="false" text="Lower Down Payment with reasonable monthly installment" GridPane.columnIndex="1" GridPane.columnSpan="6" GridPane.rowIndex="17" />
+                                          <CheckBox fx:id="chk06" mnemonicParsing="false" text="Good After-Sales Service(Magandang Serbisyo na pangmeytenans)" GridPane.columnIndex="1" GridPane.columnSpan="6" GridPane.rowIndex="18" />
+                                          <CheckBox fx:id="chk07" mnemonicParsing="false" text="Availability Of Spare Parts" GridPane.columnIndex="1" GridPane.columnSpan="4" GridPane.rowIndex="19" />
+                                          <CheckBox fx:id="chk08" mnemonicParsing="false" text="Attractive GiveAways" GridPane.columnIndex="1" GridPane.columnSpan="3" GridPane.rowIndex="20" />
+                                          <CheckBox fx:id="chk09" mnemonicParsing="false" text="Promos" GridPane.columnIndex="1" GridPane.columnSpan="2" GridPane.rowIndex="21" />
+                                          <CheckBox fx:id="chk04" mnemonicParsing="false" text="Availability of Installment Plans" GridPane.columnIndex="1" GridPane.columnSpan="4" GridPane.rowIndex="16" />
+                                          <CheckBox fx:id="chk10" mnemonicParsing="false" text="Family Members(Kapamilya)" GridPane.columnIndex="7" GridPane.columnSpan="3" GridPane.rowIndex="12" />
+                                          <CheckBox fx:id="chk11" mnemonicParsing="false" text="Friends(Kaibigan)" GridPane.columnIndex="7" GridPane.columnSpan="2" GridPane.rowIndex="13" />
+                                          <CheckBox fx:id="chk12" mnemonicParsing="false" text="Neighboor(Kapit-bahay)" GridPane.columnIndex="7" GridPane.columnSpan="3" GridPane.rowIndex="14" />
+                                          <CheckBox fx:id="chk13" mnemonicParsing="false" text="Relatives(Kamag-anak)" GridPane.columnIndex="7" GridPane.columnSpan="3" GridPane.rowIndex="15" />
+                                          <CheckBox fx:id="chk14" mnemonicParsing="false" text="TV(Telebisyon)" GridPane.columnIndex="7" GridPane.columnSpan="2" GridPane.rowIndex="16" />
+                                          <CheckBox fx:id="chk15" mnemonicParsing="false" text="Radio(Radyo)" GridPane.columnIndex="7" GridPane.columnSpan="2" GridPane.rowIndex="17" />
+                                          <CheckBox fx:id="chk16" mnemonicParsing="false" text="Magazine(Magasin)" GridPane.columnIndex="7" GridPane.columnSpan="2" GridPane.rowIndex="18" />
+                                          <CheckBox fx:id="chk17" mnemonicParsing="false" prefHeight="20.0" prefWidth="197.0" text="Local &amp; National Newspaper(Lokal at Pambansang)" GridPane.columnIndex="7" GridPane.columnSpan="6" GridPane.rowIndex="19" />
+                                          <CheckBox fx:id="chk18" mnemonicParsing="false" text="Leaflets/Flyers" GridPane.columnIndex="7" GridPane.columnSpan="2" GridPane.rowIndex="20" />
+                                          <CheckBox fx:id="chk19" mnemonicParsing="false" text="Billboard(Malaking Larawan)" GridPane.columnIndex="7" GridPane.columnSpan="3" GridPane.rowIndex="21" />
+                                          <CheckBox fx:id="chk20" mnemonicParsing="false" text="Streamers" GridPane.columnIndex="7" GridPane.columnSpan="2" GridPane.rowIndex="22" />
+                                          <CheckBox fx:id="chk21" mnemonicParsing="false" text="Events/ Displays" GridPane.columnIndex="7" GridPane.columnSpan="2" GridPane.rowIndex="23" />
+                                          <CheckBox fx:id="chk22" mnemonicParsing="false" text="Telemarketing" GridPane.columnIndex="7" GridPane.columnSpan="2" GridPane.rowIndex="24" />
+                                          <CheckBox fx:id="chk23" mnemonicParsing="false" text="Social Media(Facebook/ Twitter)" GridPane.columnIndex="7" GridPane.columnSpan="3" GridPane.rowIndex="25" />
+                                          <CheckBox fx:id="chk24" mnemonicParsing="false" text="Internet(Website/ Google)" GridPane.columnIndex="7" GridPane.columnSpan="3" GridPane.rowIndex="26" />
+                                          <Label text="Application Number:" GridPane.columnIndex="1" GridPane.columnSpan="2">
+                                             <GridPane.margin>
+                                                <Insets left="-45.0" />
+                                             </GridPane.margin>
+                                          </Label>
+                                          <Label text="Date of Application:" GridPane.columnIndex="1" GridPane.columnSpan="2" GridPane.rowIndex="2">
+                                             <GridPane.margin>
+                                                <Insets left="-45.0" />
+                                             </GridPane.margin>
+                                          </Label>
+                                          <Label text="Previous G-Card:" GridPane.columnIndex="1" GridPane.columnSpan="2" GridPane.rowIndex="3">
+                                             <GridPane.margin>
+                                                <Insets left="-45.0" />
+                                             </GridPane.margin>
+                                          </Label>
+                                          <Label prefHeight="17.0" prefWidth="120.0" text="Card Type:" GridPane.columnIndex="6" GridPane.columnSpan="3" GridPane.rowIndex="3">
+                                             <GridPane.margin>
+                                                <Insets left="-25.0" />
+                                             </GridPane.margin></Label>
+                                          <Label text="Application Type:" GridPane.columnIndex="6" GridPane.columnSpan="2" GridPane.rowIndex="2">
+                                             <GridPane.margin>
+                                                <Insets left="-25.0" />
+                                             </GridPane.margin></Label>
+                                          <Label text="Name:" GridPane.columnIndex="1" GridPane.rowIndex="4">
+                                             <GridPane.margin>
+                                                <Insets left="-45.0" />
+                                             </GridPane.margin>
+                                          </Label>
+                                          <Label text="Address:" GridPane.columnIndex="1" GridPane.rowIndex="5">
+                                             <GridPane.margin>
+                                                <Insets left="-45.0" />
+                                             </GridPane.margin>
+                                          </Label>
+                                          <Label text="Product/ Services Availed:" GridPane.columnIndex="1" GridPane.columnSpan="3" GridPane.rowIndex="6">
+                                             <GridPane.margin>
+                                                <Insets left="-45.0" />
+                                             </GridPane.margin>
+                                          </Label>
+                                          <Label text="Mode Of Purchase:" GridPane.columnIndex="1" GridPane.columnSpan="2" GridPane.rowIndex="7">
+                                             <GridPane.margin>
+                                                <Insets left="-45.0" />
+                                             </GridPane.margin>
+                                          </Label>
+                                          <Label text="Source Number:" GridPane.columnIndex="1" GridPane.columnSpan="2" GridPane.rowIndex="8">
+                                             <GridPane.margin>
+                                                <Insets left="-45.0" />
+                                             </GridPane.margin>
+                                          </Label>
+                                          <Label text="Name to Display:" GridPane.columnIndex="1" GridPane.columnSpan="2" GridPane.rowIndex="9">
+                                             <GridPane.margin>
+                                                <Insets left="-45.0" />
+                                             </GridPane.margin>
+                                          </Label>
+                                          <Label text="Amount Paid:" GridPane.columnIndex="6" GridPane.columnSpan="2" GridPane.rowIndex="8">
+                                             <GridPane.margin>
+                                                <Insets left="-25.0" />
+                                             </GridPane.margin>
+                                          </Label>
+                                          <Label text="Reason Of Purchase:" GridPane.columnIndex="1" GridPane.columnSpan="2" GridPane.rowIndex="11">
+                                             <GridPane.margin>
+                                                <Insets left="-45.0" />
+                                             </GridPane.margin>
+                                          </Label>
+                                          <Label text="Source Info:" GridPane.columnIndex="7" GridPane.columnSpan="2" GridPane.rowIndex="11">
+                                             <GridPane.margin>
+                                                <Insets left="-20.0" />
+                                             </GridPane.margin>
+                                          </Label>
+                                          <TextField fx:id="txtField01" GridPane.columnIndex="3" GridPane.columnSpan="2" GridPane.rowIndex="2" />
+                                          <ImageView fx:id="imageview" fitHeight="30.0" fitWidth="160.0" pickOnBounds="true" preserveRatio="true" GridPane.columnIndex="7">
+                                             <GridPane.margin>
+                                                <Insets bottom="-5.0" />
+                                             </GridPane.margin></ImageView>
+                                          <Label text="Card Classification:" GridPane.columnIndex="6" GridPane.rowIndex="6" />
+                                          <ComboBox fx:id="cmbCardClass" minHeight="25.0" prefHeight="25.0" prefWidth="150.0" GridPane.columnIndex="7" GridPane.columnSpan="2" GridPane.rowIndex="6" />
+                                       </children>
+                                    </GridPane>
+                                 </children>
+                              </AnchorPane>
+                           </children>
+                        </StackPane>
+                     </children>
+                  </AnchorPane>
+               </bottom>
+               <center>
+                  <AnchorPane maxHeight="139.0" minHeight="51.0" prefHeight="51.0" prefWidth="724.0" BorderPane.alignment="CENTER">
+                     <children>
+                        <Pane opacity="0.1" prefHeight="67.0" prefWidth="688.0" style="-fx-background-color: black;" AnchorPane.leftAnchor="18.0" AnchorPane.rightAnchor="18.0" AnchorPane.topAnchor="2.0" />
+                        <GridPane fx:id="NodePane00" prefHeight="52.0" prefWidth="674.0" AnchorPane.leftAnchor="18.0" AnchorPane.rightAnchor="18.0" AnchorPane.topAnchor="10.0">
+                           <columnConstraints>
+                              <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                              <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                              <ColumnConstraints hgrow="SOMETIMES" maxWidth="80.0" minWidth="10.0" prefWidth="80.0" />
+                              <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                              <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                              <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                              <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                              <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                              <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                              <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                           </columnConstraints>
+                           <rowConstraints>
+                              <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                              <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                           </rowConstraints>
+                           <children>
+                              <CustomTextField fx:id="txtSeeks00" promptText="Search" GridPane.columnIndex="3" GridPane.columnSpan="2" />
+                              <CustomTextField fx:id="txtSeeks01" promptText="Search" GridPane.columnIndex="3" GridPane.columnSpan="2" GridPane.rowIndex="1" />
+                              <CustomTextField fx:id="txtSeeks02" promptText="Search" GridPane.columnIndex="7" GridPane.columnSpan="2" />
+                              <Label text="Branch:" GridPane.columnIndex="1" GridPane.columnSpan="2">
+                                 <GridPane.margin>
+                                    <Insets left="-45.0" />
+                                 </GridPane.margin>
+                              </Label>
+                              <Label text="Source No:" GridPane.columnIndex="6">
+                                 <GridPane.margin>
+                                    <Insets left="-25.0" />
+                                 </GridPane.margin>
+                              </Label>
+                              <Label text="Client Name:" GridPane.columnIndex="1" GridPane.columnSpan="2" GridPane.rowIndex="1">
+                                 <GridPane.margin>
+                                    <Insets left="-45.0" />
+                                 </GridPane.margin>
+                              </Label>
+                           </children>
+                        </GridPane>
+                     </children>
+                  </AnchorPane>
+               </center>
+            </BorderPane>
+         </children>
+      </StackPane>
+   </children>
+</AnchorPane>

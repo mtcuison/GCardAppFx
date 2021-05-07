@@ -1,0 +1,114 @@
+#acBody{
+    -fx-background-repeat: no-repeat;
+    -fx-background-position: center;
+    -fx-background-size: 90%;
+    /*-fx-background-image:url('file:/D:/GGC_Java_Systems/images/guanzon-logo.png');*/
+}
+
+#btnExit, #btnMinimize, #btnRestoreDown{
+    -fx-border-width: 0px 0px 0px 5px;
+    -fx-border-radius: 0px;
+    -fx-background-radius: 0px;
+    -fx-background-color: transparent;
+    -fx-fill: #ffffff;
+}
+
+#btnHome{
+    -fx-border-width: 0px 0px 0px 0px;
+    -fx-border-radius: 0px;
+    -fx-background-radius: 0px;
+    -fx-background-color: transparent;
+    -fx-text-fill: #ffffff;
+}
+
+#btnHome .glyph-icon{
+    -fx-fill: white;
+}
+
+#btnHome:hover .glyph-icon{
+    -fx-fill: black;
+}
+
+#btnHome:hover, #lblArrow:hover, #lblNav:hover{
+    -fx-text-fill: black;
+}
+
+#btnExit:hover .glyph-icon, #btnMinimize:hover .glyph-icon, #btnRestoreDown:hover .glyph-icon{
+    -fx-fill: red;
+}
+
+.progress-bar > .bar {
+    -fx-background-color: linear-gradient(
+        from 0px .75em to .75em 0px,
+        repeat,
+        -fx-accent 0%,
+        -fx-accent 49%,
+        derive(-fx-accent, 30%) 50%,
+        derive(-fx-accent, 30%) 99%
+    );
+}
+
+.progress-bar > .track {
+  -fx-text-box-border: forestgreen;
+  -fx-control-inner-background: palegreen;
+}
+.scroll-pane {
+    -fx-padding: 0;
+    -fx-background:#282E34;
+}
+#btnExit .glyph-icon, #btnRestoreDown .glyph-icon, #btnMinimize .glyph-icon{
+    -fx-fill: #ffffff;
+}
+
+.text-field{
+   -fx-border-color: #000000;
+   -fx-border-width: 0.3px;
+}
+.text-area{
+   -fx-border-color: #000000;
+   -fx-border-width: 0.5px;
+}
+
+.glyph-icon{
+    -fx-fill: black;
+}
+.glyph-icon:hover{
+    -fx-fill: white;
+}
+
+.button:disabled {
+  -fx-opacity: .5 ;
+}
+
+.button:hover .glyph-icon{
+    -fx-fill: #ffffff;
+}
+
+.button{
+   -fx-background-color: 
+        #c3c4c4,
+        linear-gradient(#d6d6d6 50%, white 100%),
+        radial-gradient(center 50% -40%, radius 200%, #e6e6e6 45%, rgba(230,230,230,0) 50%);
+    -fx-background-radius: 6,5,4;
+    -fx-background-insets: 0,1,2;
+    -fx-font-size: 12;
+    -fx-font-family: "Arial";
+    -fx-font-weight: bold;
+    -fx-effect: dropshadow( three-pass-box , rgba(0,0,0,0.6) , 3, 0.0 , 0 , 1 );
+    -fx-text-fill: black;
+}
+ 
+.button:hover{
+    -fx-text-fill: #f37024;
+    -fx-scale-x: 1.1;
+    -fx-scale-y: 1.1;
+    -fx-scale-z: 1.1;
+}
+
+.button:focused{
+    -fx-border-width: 0px 0px 0px 0px;
+}
+
+.tooltip {
+    -fx-show-delay: 1000ms;
+}
