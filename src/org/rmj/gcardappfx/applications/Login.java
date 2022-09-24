@@ -17,6 +17,15 @@ public class Login {
     public void setGRider(GRider foGRider){poGRider = foGRider;}
     
     public static void main(String [] args){       
+        String path;
+        if(System.getProperty("os.name").toLowerCase().contains("win")){
+            path = "D:/GGC_Java_Systems";
+        }
+        else{
+            path = "/srv/mac/GGC_Java_Systems";
+        }
+        System.setProperty("sys.default.path.config", path);
+        
         if (!loadProperties()){
             System.err.println("Unable to load config.");
             System.exit(1);
