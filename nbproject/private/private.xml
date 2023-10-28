@@ -36,5 +36,14 @@
             <file>file:/D:/Guanzon/GMC%20SEG%20Folder%20-%20Java/GCardAppFx/src/org/rmj/gcardappfx/applications/Login.java</file>
         </group>
         <group name="GCARD"/>
+        <group name="kumander">
+            <file>file:/D:/Guanzon/GMC%20SEG%20Folder%20-%20Java/GCardAppFx/src/org/rmj/gcardappfx/styles/MainScreen.css</file>
+            <file>file:/D:/Guanzon/GMC%20SEG%20Folder%20-%20Java/GCardAppFx/src/org/rmj/gcardappfx/styles/CenterScreen.css</file>
+        </group>
+        <group name="GCard">
+            <file>file:/D:/Guanzon/GMC%20SEG%20Folder%20-%20Java/GCardAppFx/src/org/rmj/gcardappfx/views/CardIssuanceController.java</file>
+        </group>
+        <group/>
+        <group name="guanzon"/>
     </open-files>
 </project-private>
