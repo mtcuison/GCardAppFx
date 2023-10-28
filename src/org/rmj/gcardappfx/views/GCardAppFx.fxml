@@ -300,7 +300,7 @@
                      <left>
                         <AnchorPane minWidth="165.0" prefHeight="667.0" prefWidth="165.0" BorderPane.alignment="CENTER">
                            <children>
-                              <StackPane minWidth="165.0" prefHeight="150.0" prefWidth="165.0" styleClass="leftbg" stylesheets="@../styles/ImageBackGround.css" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0" />
+                              <StackPane minWidth="165.0" prefHeight="150.0" prefWidth="165.0" styleClass="leftbg" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0" />
                               <AnchorPane layoutY="510.0" prefHeight="131.0" prefWidth="165.0" AnchorPane.bottomAnchor="5.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0">
                                  <children>
                                     <Label fx:id="lblTime" alignment="CENTER" layoutY="21.0" prefHeight="79.0" prefWidth="161.0" text="04:30" textAlignment="JUSTIFY" textFill="WHITE" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="21.0">
