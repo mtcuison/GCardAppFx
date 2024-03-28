@@ -40,6 +40,7 @@ import org.rmj.client.agent.XMClient;
 import org.rmj.gcard.device.ui.GCardDevice;
 import org.rmj.gcard.trans.agentFX.XMGCOnPoints;
 import org.rmj.gcard.trans.agentFX.XMGCard;
+import org.rmj.webcamfx.ui.Webcam;
 
 public class OnlinePoints_EntryController implements Initializable {
 
@@ -390,6 +391,13 @@ public class OnlinePoints_EntryController implements Initializable {
                         poTrans.releaseCard();
                         
                         ShowMessageFX.Information(null, pxeModuleName, "Successfully Saved!");
+                        
+                        //display TDS
+                        String lsTDS = CommonUtils.getGCardTDS(poGRider, 
+                                                (String) poTrans.getMaster("sSourceNo"), 
+                                                (String) poTrans.getMaster("sSourceCd"));
+                        Webcam.showQR("G-Card Points Update", lsTDS, "TDS");
+                        
                         clearFields();
                     }else{
                         ShowMessageFX.Warning(poTrans.getMessage(), pxeModuleName, "Unable to save transaction.");
