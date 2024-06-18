@@ -41,8 +41,7 @@
         <group/>
         <group name="guanzon"/>
         <group/>
-        <group name="GCARD">
-            <file>file:/D:/Guanzon/GMC%20SEG%20Folder%20-%20Java/GCardAppFx/src/org/rmj/gcardappfx/views/OnlinePoints_EntryController.java</file>
-        </group>
+        <group name="GCARD"/>
+        <group name="Computerized Accounting System"/>
     </open-files>
 </project-private>

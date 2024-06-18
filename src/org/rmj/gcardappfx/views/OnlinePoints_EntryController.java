@@ -38,9 +38,9 @@ import org.rmj.appdriver.constants.EditMode;
 import org.rmj.appdriver.constants.GCDeviceType;
 import org.rmj.client.agent.XMClient;
 import org.rmj.gcard.device.ui.GCardDevice;
+import org.rmj.gcard.service.GCRestAPI;
 import org.rmj.gcard.trans.agentFX.XMGCOnPoints;
 import org.rmj.gcard.trans.agentFX.XMGCard;
-import org.rmj.webcamfx.ui.Webcam;
 
 public class OnlinePoints_EntryController implements Initializable {
 
@@ -392,11 +392,21 @@ public class OnlinePoints_EntryController implements Initializable {
                         
                         ShowMessageFX.Information(null, pxeModuleName, "Successfully Saved!");
                         
-                        //display TDS
+                        //request point update
                         String lsTDS = CommonUtils.getGCardTDS(poGRider, 
                                                 (String) poTrans.getMaster("sSourceNo"), 
                                                 (String) poTrans.getMaster("sSourceCd"));
-                        Webcam.showQR("G-Card Points Update", lsTDS, "TDS");
+                        
+                        //Webcam.showQR("G-Card Points Update", lsTDS, "TDS");
+                        JSONObject loJSON = GCRestAPI.RequestPointsUpdate(poGRider, lsTDS);
+                        
+                        if (((String) loJSON.get("result")).equalsIgnoreCase("success")){
+                            ShowMessageFX.Information(null, pxeModuleName, (String) loJSON.get("message"));
+                        } else {
+                            loJSON = (JSONObject) loJSON.get("error");
+                            ShowMessageFX.Warning(null, pxeModuleName, (String) loJSON.get("message"));
+                        }
+                        //end - request point update
                         
                         clearFields();
                     }else{

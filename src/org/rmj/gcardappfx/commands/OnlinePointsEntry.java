@@ -15,6 +15,7 @@ import org.rmj.appdriver.agentfx.CommonUtils;
 import org.rmj.appdriver.agentfx.FileUtil;
 import org.rmj.gcard.trans.agentFX.XMGCOnPoints;
 import org.rmj.gcard.trans.agentFX.XMGCard;
+import org.rmj.webcamfx.ui.Webcam;
 
 public class OnlinePointsEntry {
     public static void main (String [] args){
@@ -22,7 +23,7 @@ public class OnlinePointsEntry {
         
         JSONObject loJSON = new JSONObject();
         
-        if (args.length != 6){ 
+        if (args.length != 7){ 
             loJSON.put("result", "error");
             loJSON.put("message", "Invalid parameters detected.");
             FileUtil.fileWrite(RESULT_DIR, (String) loJSON.toJSONString());
@@ -54,7 +55,7 @@ public class OnlinePointsEntry {
         String lsVal = CommonUtils.getConfiguration(poGRider, "QRActVldtn");
         if (lsVal != null) System.setProperty("app.gcard.digital.1", lsVal);    
         
-        OnlineEntry instance = new OnlineEntry(poGRider, args[2], args[3], args[4], args[5]);
+        OnlineEntry instance = new OnlineEntry(poGRider, args[2], args[3], args[4], args[5], args[6]);
         if (instance.NewTransaction()){
             if (instance.SaveTransaction()){
                 loJSON.put("result", "success");
@@ -89,12 +90,13 @@ public class OnlinePointsEntry {
         String psDigitalx;
         String psSourceNo;
         String psSourceCd;
+        String pdTransact;
         
         String psMessage;
         
         public String getMessage(){return psMessage;}
 
-        public OnlineEntry(GRider foGRider, String fsGCardNox, String fsDigitalx, String fsReferNox, String fsSourceCd){
+        public OnlineEntry(GRider foGRider, String fsGCardNox, String fsDigitalx, String fsReferNox, String fsSourceCd, String fdTransact){
             JSONObject loJSON = new JSONObject();
             
             if (foGRider == null){                
@@ -130,6 +132,13 @@ public class OnlinePointsEntry {
                 System.exit(1); 
             }
             
+            if (fdTransact.isEmpty()){
+                loJSON.put("result", "error");
+                loJSON.put("message", "Transaction date must not be empty.");
+                FileUtil.fileWrite(RESULT_DIR, (String) loJSON.toJSONString());
+                System.exit(1); 
+            }
+            
             poGRider = foGRider;
             poTrans = new XMGCOnPoints(poGRider, poGRider.getBranchCode(), false);
             
@@ -137,6 +146,7 @@ public class OnlinePointsEntry {
             psDigitalx = fsDigitalx;
             psSourceNo = fsReferNox;
             psSourceCd = fsSourceCd;
+            pdTransact = fdTransact;
         }
         
         public boolean NewTransaction(){
@@ -150,8 +160,9 @@ public class OnlinePointsEntry {
                     poCard = poTrans.getGCard();
                       
                     if (poCard != null){
-                        if (poTrans.searchField("sSourceCd", psSourceCd)){ //monthly payment
-                            poTrans.setMaster("sSourceNo",  psSourceNo); //pass OR number 
+                        poTrans.setMaster("dTransact",  SQLUtil.toDate(pdTransact, SQLUtil.FORMAT_SHORT_DATE)); //pass reference date 
+                        if (poTrans.searchField("sSourceCd", psSourceCd)){
+                            poTrans.setMaster("sSourceNo",  psSourceNo); //pass reference no 
                             return true;
                         } else psMessage = poTrans.getMessage();
                     } else psMessage = "Card information is empty.";
@@ -164,8 +175,13 @@ public class OnlinePointsEntry {
         public boolean SaveTransaction(){
             if (!poTrans.saveUpdate()){
                 psMessage = poTrans.getMessage();
+                System.out.println(psMessage);
                 return false;
             }
+                        
+            Webcam.displayGCARDTDS(CommonUtils.getGCardTDS(poGRider, 
+                                        (String) poTrans.getMaster("sSourceNo"), 
+                                        (String) poTrans.getMaster("sSourceCd")));           
             
             return true;
         }
